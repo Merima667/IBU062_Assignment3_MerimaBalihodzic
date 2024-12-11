@@ -42,3 +42,17 @@ Conncted to Switch 1
 PC4:
 IP address: 210.3.14.5
 Conncted to Switch 2
+
+`DHCP commands and steps`
+First Switch:
+id dhcp pool FirstNetwork 
+network 168.90.0.0 255.255.0.0
+default-router 168.90.0.1
+exit
+Second Switch:
+id dhcp pool SecondNetwork 
+network 210.3.14.0 255.255.255.0
+default-router 210.3.14.1
+exit
+
+
